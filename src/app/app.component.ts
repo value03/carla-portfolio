@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from "@angular/core";
+import { RouterLinkActive, RouterModule, RouterOutlet } from "@angular/router";
+import { RouterLink } from "@angular/router";
+import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [RouterOutlet, RouterLink],
+  templateUrl: "./app.component.html",
 })
 export class AppComponent {
-  title = 'carla-portfolio';
+  title = "carla-portfolio";
 }
