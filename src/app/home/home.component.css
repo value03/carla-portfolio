@@ -1,3 +1,7 @@
+.home-galery-image {
+  cursor: pointer;
+}
+
 .row {
   height: calc(100vh - 16px);
   padding: 10px;
