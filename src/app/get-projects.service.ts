@@ -2,16 +2,13 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 
-@Injectable({
-  providedIn: "root",
-})
+@Injectable()
 export class GetProjectsService {
-  private projectsUrl = "assets/projects.json";
+  private projectsUrl = "http://localhost:1337/api/projects/?populate=*";
 
   constructor(private http: HttpClient) {}
 
   getProjects(): Observable<any> {
-    console.log(JSON.parse);
-    return this.http.get(this.projectsUrl);
+    return this.http.get<any>(this.projectsUrl);
   }
 }
