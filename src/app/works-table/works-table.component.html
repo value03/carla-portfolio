@@ -3,7 +3,7 @@
     <ng-container class="invisible" *ngIf="p.category == category">
       <app-work-card
         [title]="p.title"
-        [titleImage]="'http://localhost:1337'.concat(p.titleImage.url)"
+        [titleImage]="p.titleImage.url"
         [description]="p.description"
         [year]="p.date"
       ></app-work-card>
