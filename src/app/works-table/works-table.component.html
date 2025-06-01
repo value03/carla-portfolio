@@ -1,0 +1,12 @@
+<div class="container">
+  <ng-container *ngFor="let p of projects">
+    <ng-container class="invisible" *ngIf="p.category == category">
+      <app-work-card
+        [title]="p.title"
+        [titleImage]="p.titleImage"
+        [description]="p.description"
+        [year]="p.year"
+      ></app-work-card>
+    </ng-container>
+  </ng-container>
+</div>

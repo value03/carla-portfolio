@@ -1,59 +1,16 @@
-<h1 class="title">Carla aMarca</h1>
-<div class="row">
-  <div class="col">
-    <h1 class="col-title">Poster</h1>
-    <img
-      src="./assets/poster.png"
-      class="home-galery-image"
-      routerLink="/poster"
-    />
-  </div>
-  <div class="col">
-    <h1 class="col-title">Photography</h1>
-    <img
-      src="./assets/sl.png"
-      class="home-galery-image"
-      routerLink="/photography"
-    />
-  </div>
-  <div class="col">
-    <h1 class="col-title">Editorial</h1>
-    <img
-      src="./assets/Editorial1.png"
-      class="home-galery-image"
-      routerLink="/editorial1"
-    />
-    <img
-      src="./assets/Editorial2.png"
-      class="home-galery-image"
-      routerLink="/editorial2"
-    />
-    <img
-      src="./assets/Editorial3.png"
-      class="home-galery-image"
-      routerLink="/editorial3"
-    />
-  </div>
-  <div class="col">
-    <h1 class="col-title">Corporate Design</h1>
-    <img
-      src="./assets/CorpDes1.png"
-      class="home-galery-image"
-      routerLink="/corpDesign"
-    />
-  </div>
-  <div class="col">
-    <h1 class="col-title">3D</h1>
-    <img src="./assets/3D_1.png" class="home-galery-image" routerLink="/3D-1" />
-    <img src="./assets/3D_2.png" class="home-galery-image" routerLink="/3D-2" />
-    <img src="./assets/3D_3.png" class="home-galery-image" routerLink="/3D-3" />
-  </div>
-  <div class="col">
-    <h1 class="col-title">Malerei</h1>
-    <img
-      src="./assets/Malerei1.png"
-      class="home-galery-image"
-      routerLink="/malerei"
-    />
+<div class="container">
+  <app-menu-bar></app-menu-bar>
+  <div class="body">
+    <div class="name">
+      <h1 class="title" routerLink="/home">Carla aMarca</h1>
+    </div>
+    <div class="content">
+      <app-works-table
+        *ngIf="project != null"
+        [category]="project"
+        [cols]="2"
+        [rows]="1"
+      ></app-works-table>
+    </div>
   </div>
 </div>
