@@ -8,10 +8,6 @@ div.container {
 }
 
 app-work-card {
-  //border: solid;
-  //border-width: 1px;
-  //border-color: black;
-
   flex-basis: calc(100% / var(--cols));
   height: calc(100% / var(--rows));
 }

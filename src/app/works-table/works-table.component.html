@@ -2,6 +2,7 @@
   <ng-container *ngFor="let p of projects">
     <ng-container class="invisible" *ngIf="p.category == category">
       <app-work-card
+        [category]="p.category"
         [title]="p.title"
         [titleImage]="p.titleImage.url"
         [description]="p.description"
