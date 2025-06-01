@@ -23,11 +23,11 @@
     "@angular/platform-server": "^17.3.0",
     "@angular/router": "^17.3.0",
     "@angular/ssr": "^17.3.11",
+    "create-strapi": "^5.14.0",
     "express": "^4.18.2",
     "knex": "^3.1.0",
     "npm": "^11.4.1",
     "rxjs": "~7.8.0",
-    "strapi": "^3.6.11",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
