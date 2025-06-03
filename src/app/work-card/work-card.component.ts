@@ -17,7 +17,7 @@ export class WorkCardComponent {
   @Input() material = "";
   @Input() size = "";
 
-  titleImageUrl: string = "http://localhost:1337".concat(this.titleImage);
+  titleImageUrl: string = "http://185.143.101.10:1337".concat(this.titleImage);
 
   link: string = "/".concat(this.category.concat("/", this.title));
 }
