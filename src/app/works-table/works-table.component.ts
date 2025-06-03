@@ -7,7 +7,7 @@ import { HttpClientModule } from "@angular/common/http";
 
 interface project {
   category: string;
-  homepageImage: string;
+  LandingPageImage: string;
   title: string;
   description: string;
   year: string;
@@ -41,6 +41,7 @@ export class WorksTableComponent implements OnInit {
       .subscribe((response) => {
         this.projects = response.data;
         console.log("Projects/n/n", this.projects);
+        console.log(this.projects[0].LandingPageImage.url);
       });
   }
 }
