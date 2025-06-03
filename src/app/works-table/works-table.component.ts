@@ -41,6 +41,14 @@ export class WorksTableComponent implements OnInit {
       .subscribe((response) => {
         this.projects = response.data;
         console.log("Projects/n/n", this.projects);
+        fetch("http://185.143.101.10:1337/api/projects")
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
         console.log(this.projects[0].LandingPageImage.url);
       });
   }
