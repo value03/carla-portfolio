@@ -42,14 +42,13 @@ div {
 }
 
 .name {
-  height: 100%;
-
   display: flex;
   flex-basis: 8vw;
   flex-shrink: 2;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: baseline;
+  flex-direction: row;
+  justify-content: middle;
+  align-items: middle;
+  text-align: center;
 }
 
 .content {
@@ -59,11 +58,19 @@ div {
   flex-basis: 100%;
 }
 
+@font-face {
+  font-family: "Dune_Rise";
+  src: url("../../assets/fonts/Ruigslay.otf");
+}
+
 .title {
-  font-size: 50px;
-  writing-mode: sideways-lr;
-  text-orientation: mixed;
-  width: 50px;
+  font-size: 100px;
+  letter-spacing: 20px;
+  font-family: "Dune_Rise";
+  //writing-mode: sideways-lr;
+  //text-orientation: mixed;
+  height: 50px;
+  width: 100%;
   margin: 0;
 }
 

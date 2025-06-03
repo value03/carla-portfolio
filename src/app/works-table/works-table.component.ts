@@ -33,6 +33,9 @@ export class WorksTableComponent implements OnInit {
   constructor(private projectService: GetProjectsService) {}
 
   ngOnInit(): void {
+    if (this.category == "3d") {
+      this.category = "D3";
+    }
     this.projectService
       .getProjects("/api/projects/?populate=*")
       .subscribe((response) => {
