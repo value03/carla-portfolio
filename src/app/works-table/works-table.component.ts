@@ -35,7 +35,7 @@ export class WorksTableComponent implements OnInit {
       .getProjects("/api/projects/?populate=*")
       .subscribe((response) => {
         this.projects = response.data;
-        console.log("Projrcts/n/n", this.projects);
+        console.log("Projects/n/n", this.projects);
       });
   }
 }
