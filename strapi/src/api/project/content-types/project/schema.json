@@ -14,7 +14,7 @@
     "title": {
       "type": "string"
     },
-    "homepageImage": {
+    "LandingPageImage": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -25,70 +25,20 @@
       ]
     },
     "description": {
-      "type": "text"
+      "type": "string"
     },
-    "date": {
+    "year": {
       "type": "string"
     },
     "category": {
       "type": "enumeration",
       "enum": [
-        "corporate-design",
         "poster",
-        "editorial",
         "photography",
-        "D3",
-        "malerei"
+        "editorial",
+        "corporate-design",
+        "D3"
       ]
-    },
-    "porjectTitleImage": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "backdrop1": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "backdrop2": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "images": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "materials": {
-      "type": "string"
-    },
-    "size": {
-      "type": "string"
-    },
-    "show_titleImage": {
-      "type": "boolean"
     }
   }
 }

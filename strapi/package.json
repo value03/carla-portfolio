@@ -22,7 +22,6 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
-    "strapi": "^3.6.11",
     "styled-components": "^6.0.0"
   },
   "devDependencies": {
@@ -36,7 +35,7 @@
     "npm": ">=6.0.0"
   },
   "strapi": {
-    "uuid": "dd89989a-4502-436a-aa30-71abe4c40c74",
-    "installId": "bacbc625f0a0d6d6b117992e18c53469c6025cca12c69567ac742e4d5e703d10"
+    "uuid": "5ce02e93-5e16-4402-b8d9-1b3bef1e3f94",
+    "installId": "c1c6e9c1a2dbc4a0e2848232db237e5706682e4a48291110bdc49df082adfd1a"
   }
 }
