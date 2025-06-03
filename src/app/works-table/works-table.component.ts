@@ -7,10 +7,12 @@ import { HttpClientModule } from "@angular/common/http";
 
 interface project {
   category: string;
-  titleImage: string;
+  homepageImage: string;
   title: string;
   description: string;
   year: string;
+  size: string;
+  materials: string;
 }
 
 @Component({
