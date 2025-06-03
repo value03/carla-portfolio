@@ -14,6 +14,8 @@ export class WorkCardComponent {
   @Input() title = "";
   @Input() description = "";
   @Input() year = "";
+  @Input() material = "";
+  @Input() size = "";
 
   link: string = "/".concat(this.category.concat("/", this.title));
 }
