@@ -2,7 +2,6 @@ import { Component, OnInit } from "@angular/core";
 import { RouterLink, RouterOutlet } from "@angular/router";
 import { WorkCardComponent } from "../work-card/work-card.component";
 import { MenuBarComponent } from "../menu-bar/menu-bar.component";
-import { NameComponent } from "../name/name.component";
 import { ActivatedRoute } from "@angular/router";
 import { GetProjectsService } from "../get-projects.service";
 import { CommonModule } from "@angular/common";
@@ -18,7 +17,6 @@ import { WorksTableComponent } from "../works-table/works-table.component";
     RouterOutlet,
     WorkCardComponent,
     MenuBarComponent,
-    NameComponent,
     CommonModule,
     WorksTableComponent,
   ],
