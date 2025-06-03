@@ -14,7 +14,7 @@
     "title": {
       "type": "string"
     },
-    "titleImage": {
+    "homepageImage": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -39,6 +39,16 @@
         "photography",
         "D3",
         "malerei"
+      ]
+    },
+    "porjectTitleImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
       ]
     },
     "backdrop1": {

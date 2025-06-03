@@ -401,6 +401,9 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     date: Schema.Attribute.String;
     description: Schema.Attribute.Text;
+    homepageImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     images: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true
@@ -412,13 +415,13 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     materials: Schema.Attribute.String;
+    porjectTitleImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     publishedAt: Schema.Attribute.DateTime;
     show_titleImage: Schema.Attribute.Boolean;
     size: Schema.Attribute.String;
     title: Schema.Attribute.String;
-    titleImage: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
