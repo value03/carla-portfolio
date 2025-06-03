@@ -5,14 +5,14 @@ import { CommonModule } from "@angular/common";
 import { Interface } from "node:readline/promises";
 import { HttpClientModule } from "@angular/common/http";
 
-interface project {
+export interface project {
   category: string;
-  LandingPageImage: string;
+  LandingPageImage: { url: string };
   title: string;
-  description: string;
-  year: string;
-  size: string;
-  materials: string;
+  description?: string;
+  year?: string;
+  size?: string;
+  materials?: string;
 }
 
 @Component({

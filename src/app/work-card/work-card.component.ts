@@ -1,5 +1,6 @@
 import { Component, Input } from "@angular/core";
 import { RouterLink, RouterOutlet } from "@angular/router";
+import { project } from "../works-table/works-table.component";
 
 @Component({
   selector: "app-work-card",
@@ -9,15 +10,17 @@ import { RouterLink, RouterOutlet } from "@angular/router";
   styleUrl: "./work-card.component.scss",
 })
 export class WorkCardComponent {
-  @Input() category = "";
-  @Input() titleImage = "";
-  @Input() title = "";
-  @Input() description = "";
-  @Input() year = "";
-  @Input() material = "";
-  @Input() size = "";
+  @Input() project: project = {
+    title: "hi",
+    category: "hello",
+    LandingPageImage: { url: "nono" },
+  };
 
-  titleImageUrl: string = "http://185.143.101.10:1337".concat(this.titleImage);
+  titleImageUrl: string = "http://185.143.101.10:1337".concat(
+    this.project.LandingPageImage.url,
+  );
 
-  link: string = "/".concat(this.category.concat("/", this.title));
+  link: string = "/".concat(
+    this.project.category.concat("/", this.project.title),
+  );
 }

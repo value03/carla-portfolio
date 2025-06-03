@@ -1,15 +1,13 @@
 <div class="container">
   <div class="backdrop">
     <img
-      [src]="titleImageUrl.concat(titleImage)"
-      [routerLink]="'/' + category + '/' + title"
+      [src]="titleImageUrl"
+      [routerLink]="'/' + project.category + '/' + project.title"
     />
     <div class="title">
-      <h5>{{ year }}</h5>
-      <h1>{{ title }}</h1>
-      <p>{{ description }}</p>
-      <p>{{ titleImageUrl.concat(titleImage) }}</p>
-      <p>{{ titleImage }}</p>
+      <h5>{{ project.year }}</h5>
+      <h1>{{ project.title }}</h1>
+      <p>{{ project.description }}</p>
     </div>
   </div>
 </div>
