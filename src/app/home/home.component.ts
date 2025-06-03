@@ -27,6 +27,9 @@ export class HomeComponent implements OnInit {
   project: string | null = "";
   project_activated: boolean = false;
 
+  backdrop: string =
+    "https://diplomatic-cats-baa3b29b9f.media.strapiapp.com/12981448_3840_2160_50fps_2f5b46b66f.mp4";
+
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {

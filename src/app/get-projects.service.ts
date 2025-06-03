@@ -4,12 +4,11 @@ import { Observable } from "rxjs";
 
 @Injectable()
 export class GetProjectsService {
-  private projectsUrl =
-    "https://diplomatic-cats-baa3b29b9f.strapiapp.com/api/projects/?populate=*";
+  private projectsUrl = "https://diplomatic-cats-baa3b29b9f.strapiapp.com";
 
   constructor(private http: HttpClient) {}
 
-  getProjects(): Observable<any> {
-    return this.http.get<any>(this.projectsUrl);
+  getProjects(resource: string): Observable<any> {
+    return this.http.get<any>(this.projectsUrl.concat(resource));
   }
 }

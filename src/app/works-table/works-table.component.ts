@@ -31,9 +31,11 @@ export class WorksTableComponent implements OnInit {
   constructor(private projectService: GetProjectsService) {}
 
   ngOnInit(): void {
-    this.projectService.getProjects().subscribe((response) => {
-      this.projects = response.data;
-      console.log(this.projects);
-    });
+    this.projectService
+      .getProjects("/api/projects/?populate=*")
+      .subscribe((response) => {
+        this.projects = response.data;
+        console.log("Projrcts/n/n", this.projects);
+      });
   }
 }

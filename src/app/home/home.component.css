@@ -70,3 +70,10 @@ div {
 app-works-table {
   width: 100%;
 }
+
+video {
+  z-index: -1;
+  min-height: 100vh;
+  min-width: 100%;
+  position: fixed;
+}
