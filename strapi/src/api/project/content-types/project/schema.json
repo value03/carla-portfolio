@@ -70,6 +70,15 @@
         "videos",
         "audios"
       ]
+    },
+    "materials": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "show_titleImage": {
+      "type": "boolean"
     }
   }
 }

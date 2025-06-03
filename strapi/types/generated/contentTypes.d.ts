@@ -411,7 +411,10 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
       'api::project.project'
     > &
       Schema.Attribute.Private;
+    materials: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    show_titleImage: Schema.Attribute.Boolean;
+    size: Schema.Attribute.String;
     title: Schema.Attribute.String;
     titleImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
