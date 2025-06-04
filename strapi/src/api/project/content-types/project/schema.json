@@ -37,8 +37,72 @@
         "photography",
         "editorial",
         "corporate-design",
-        "D3"
+        "D3",
+        "video",
+        "malerei"
       ]
+    },
+    "size": {
+      "type": "string"
+    },
+    "materials": {
+      "type": "string"
+    },
+    "ProjectPageTitleImage": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ShowProjectPageTitleImage": {
+      "type": "boolean"
+    },
+    "ImagesProjectPage": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Backdrop1": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Backdrop2": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "isitavideo": {
+      "type": "boolean"
     }
   }
 }
