@@ -23,7 +23,7 @@ export class WorkCardComponent implements OnInit {
   link: string = "";
 
   ngOnInit(): void {
-    this.titleImageUrl = "http://vps.nimbus3k.ch:1337".concat(
+    this.titleImageUrl = "http://localhost:1337".concat(
       this.project.LandingPageImage.url,
     );
 

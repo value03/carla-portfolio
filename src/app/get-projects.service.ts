@@ -4,7 +4,7 @@ import { Observable } from "rxjs";
 
 @Injectable()
 export class GetProjectsService {
-  private projectsUrl = "http://185.143.101.10:1337";
+  private projectsUrl = "http://localhost:1337";
 
   constructor(private http: HttpClient) {}
 
