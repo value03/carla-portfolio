@@ -59,14 +59,14 @@ div {
 }
 
 @font-face {
-  font-family: "Dune_Rise";
-  src: url("../../assets/fonts/Ruigslay.otf");
+  font-family: "DarkWoodBeveled";
+  src: url("/fonts/darkwoodbeveled/DarkWoodBeveled.otf");
 }
 
 .title {
   font-size: 100px;
   letter-spacing: 20px;
-  font-family: "Dune_Rise";
+  font-family: "DarkWoodBeveled";
   //writing-mode: sideways-lr;
   //text-orientation: mixed;
   height: 50px;

@@ -71,26 +71,6 @@
         "audios"
       ]
     },
-    "Backdrop1": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "Backdrop2": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "video": {
       "type": "media",
       "multiple": false,
@@ -103,6 +83,16 @@
     },
     "isitavideo": {
       "type": "boolean"
+    },
+    "backdrops": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

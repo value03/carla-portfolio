@@ -413,8 +413,10 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    Backdrop1: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    Backdrop2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    backdrops: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
     category: Schema.Attribute.Enumeration<
       [
         'poster',
