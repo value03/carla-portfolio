@@ -1,0 +1,30 @@
+@keyframes change_color {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: red;
+  }
+}
+
+.controler {
+  background-color: lightblue;
+  width: 100vw;
+  height: 100vh;
+}
+
+.trail {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 100px;
+  position: fixed;
+  left: 0px;
+  top: 40vh;
+  animation: change_color linear forwards;
+  animation-duration: auto;
+  animation-timeline: scroll();
+}

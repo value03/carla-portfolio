@@ -1,12 +1,40 @@
 <div class="container">
-  <h1 class="work-title">{{ title }}</h1>
-  <mat-divider></mat-divider>
-  <div class="work-right-stuff">
-    <p class="work-description">{{ description }}</p>
-    <p class="work-info">{{ info }}</p>
-    <p class="work-date-range">{{ dateRange }}</p>
+  <div class="container cunt">
+    <div class="title">
+      <h1 class="title">{{ project.title }}</h1>
+    </div>
+    <div class="body">
+      <div class="description_stuff">
+        <div class="description">
+          <p class="description">{{ project.description }}</p>
+          <p class="materials">{{ project.materials }}</p>
+          <p class="size" id="1">{{ project.size }}</p>
+        </div>
+      </div>
+      <div class="nav wrapper">
+        <div class="exit">
+          <h1 class="nav exit">x</h1>
+        </div>
+        <div class="titlesmall">
+          <!--h1 class="nav titlesmall">{{ project.title }}</h1-->
+        </div>
+        <div class="year">
+          <h1 class="nav year">{{ project.year }}</h1>
+        </div>
+      </div>
+    </div>
+    <div class="nav fixed">
+      <div class="exit">
+        <h1 class="nav exit linkig" [routerLink]="'/'.concat(project.category)">
+          x
+        </h1>
+      </div>
+      <div class="titlesmall">
+        <!--h1 class="nav titlesmall">{{ project.title }}</h1-->
+      </div>
+      <div class="year">
+        <h1 class="nav year">{{ project.year }}</h1>
+      </div>
+    </div>
   </div>
-  <a routerLink="/home">
-    <h2 class="e">e</h2>
-  </a>
 </div>

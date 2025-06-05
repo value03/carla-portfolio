@@ -1,0 +1,63 @@
+.god {
+  width: 100vw;
+}
+
+.LastContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100vw;
+
+  overflow: hidden;
+}
+
+.backdropContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+
+  overflow: hidden;
+
+  &.container {
+    display: block;
+    height: auto;
+  }
+
+  &.absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+}
+
+.backdrop {
+  width: 100vw;
+  min-height: 100vh;
+
+  &.last {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+}
+
+.projectImage {
+  width: 80vw;
+}
+
+app-work-title {
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+app-project-nav {
+  position: fixed;
+}

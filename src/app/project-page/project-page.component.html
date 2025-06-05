@@ -1,1 +1,28 @@
-<p>project-page works! {{ category }} / {{ project }}</p>
+<app-project-nav></app-project-nav>
+<ng-container
+  *ngFor="
+    let backdrop of backdrops;
+    index as i;
+    last as isLast;
+    first as isFirst
+  "
+>
+  <div class="backdropContainer first" *ngIf="isFirst">
+    <app-work-title [project]="p"></app-work-title>
+    <div class="backdropContainer first absolute">
+      <img [src]="backdrop" class="backdrop" />
+    </div>
+  </div>
+  <div class="backdropContainer middle" *ngIf="!isLast && !isFirst">
+    <img [src]="projectImages[i]" class="projectImage" />
+    <img [src]="backdrop" class="backdrop" />
+  </div>
+  <div class="backdropContainer last container" *ngIf="isLast">
+    <img [src]="backdrop" class="backdrop last" />
+    <ng-container *ngFor="let i of getImages(i, projectImages.length)">
+      <div class="backdropContainer last">
+        <img [src]="projectImages[i]" class="projectImage" />
+      </div>
+    </ng-container>
+  </div>
+</ng-container>

@@ -6,9 +6,15 @@
 
   <div class="content">
     <app-works-table
-      *ngIf="project != null"
+      *ngIf="project != null && !handheldPortrait"
       [category]="project"
       [cols]="2"
+      [rows]="1"
+    ></app-works-table>
+    <app-works-table
+      *ngIf="project != null && handheldPortrait"
+      [category]="project"
+      [cols]="1"
       [rows]="1"
     ></app-works-table>
   </div>
@@ -17,4 +23,4 @@
     <source [src]="backdrop" type="video/mp4" />
   </video>
 </div>
-<img src="http://vps.nimbus3k.ch:1337/uploads/horsemask_55745891f0.png" />
+<!--h1>{{ handheldPortrait }}</-h1-->

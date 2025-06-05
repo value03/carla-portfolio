@@ -4,7 +4,7 @@ import { Observable } from "rxjs";
 
 @Injectable()
 export class GetProjectsService {
-  private projectsUrl = "http://localhost:1337";
+  private projectsUrl = "https://vps.nimbus3k.ch/strapi";
 
   constructor(private http: HttpClient) {}
 

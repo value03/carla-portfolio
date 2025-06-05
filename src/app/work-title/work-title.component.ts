@@ -1,6 +1,7 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 import { MatDividerModule } from "@angular/material/divider";
 import { RouterLink, RouterOutlet } from "@angular/router";
+import { project } from "../app.component";
 
 @Component({
   selector: "app-work-title",
@@ -9,9 +10,15 @@ import { RouterLink, RouterOutlet } from "@angular/router";
   templateUrl: "./work-title.component.html",
   styleUrl: "./work-title.component.scss",
 })
-export class WorkTitleComponent {
-  @Input() title = "";
-  @Input() description = "";
-  @Input() info = "";
-  @Input() dateRange = "";
+export class WorkTitleComponent implements OnInit {
+  @Input() project: project = new project();
+
+  constructor() {}
+
+  ngOnInit(): void {
+    console.log("hello");
+    console.log(this.project.size);
+    let elem = document.getElementById("1");
+    console.log(elem);
+  }
 }

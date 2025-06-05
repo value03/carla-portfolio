@@ -1,8 +1,6 @@
 import { Component, Input, OnInit } from "@angular/core";
 import { RouterLink, RouterOutlet } from "@angular/router";
-import { project } from "../works-table/works-table.component";
-import { error } from "console";
-import { title } from "process";
+import { project, strapiUrl } from "../app.component";
 
 @Component({
   selector: "app-work-card",
@@ -12,23 +10,18 @@ import { title } from "process";
   styleUrl: "./work-card.component.scss",
 })
 export class WorkCardComponent implements OnInit {
-  @Input() project: project = {
-    title: "hi",
-    description: "hahah",
-    LandingPageImage: { url: "haha" },
-    category: "balls",
-  };
+  @Input() project: project = new project();
 
   titleImageUrl: string = "";
   link: string = "";
 
   ngOnInit(): void {
-    this.titleImageUrl = "http://localhost:1337".concat(
-      this.project.LandingPageImage.url,
-    );
+    if (this.project != null) {
+      this.titleImageUrl = strapiUrl.concat(this.project.LandingPageImage.url);
 
-    this.link = "/".concat(
-      this.project.category.concat("/", this.project.title),
-    );
+      this.link = "/".concat(
+        this.project.category.concat("/", this.project.title),
+      );
+    }
   }
 }

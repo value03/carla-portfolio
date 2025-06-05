@@ -8,6 +8,6 @@ div.container {
 }
 
 app-work-card {
-  flex-basis: calc(100% / var(--cols));
+  width: calc(100% / var(--cols));
   height: calc(100% / var(--rows));
 }
