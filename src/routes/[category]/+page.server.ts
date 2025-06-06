@@ -3,6 +3,7 @@ import type { PageServerData } from './$types';
 
 export const load: PageServerData = async () => {
 	getResource('/api/projects').then((response) => {
+		console.log(response);
 		return response;
 	});
 };
