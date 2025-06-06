@@ -27,10 +27,8 @@ export class project {
 	}
 }
 
-const base_url = 'https://vps.nimbus3k.ch/strapi';
-
 export async function getResource(resource: string): Promise<Response> {
-	return fetch(base_url.concat(resource))
+	return fetch(resource)
 		.then((promise) => promise.json())
 		.then((promise) => {
 			console.log(promise);
