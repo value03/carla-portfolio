@@ -29,13 +29,11 @@ export class project {
 
 const base_url = 'https://vps.nimbus3k.ch/strapi';
 
-export function getResource(resource: string): object {
-	let apiReturn: object = Object();
-	fetch(base_url.concat(resource))
-		.then((response) => response.json())
-		.then((response) => (apiReturn = response));
-	if (apiReturn == null) {
-		throw Error;
-	}
-	return apiReturn;
+export async function getResource(resource: string): Promise<Response> {
+	return fetch(base_url.concat(resource))
+		.then((promise) => promise.json())
+		.then((promise) => {
+			console.log(promise);
+			return promise;
+		});
 }
