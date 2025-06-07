@@ -1,9 +1,10 @@
 import { getResource } from '$lib';
-import type { PageServerData } from './$types';
+import type { PageServerLoad } from './$types';
 
-export const load: PageServerData = async () => {
+/**  */
+export const load: PageServerLoad = async ({ params }) => {
 	getResource('/api/projects').then((response) => {
 		console.log(response);
-		return response;
+		return { projects: response, route: params.category };
 	});
 };
