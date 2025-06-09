@@ -9,4 +9,6 @@
 	<h1>loading...</h1>
 {:then projects}
 	<h1>{projects}</h1>
+{:catch error}
+	<h1>{error}</h1>
 {/await}
