@@ -4,4 +4,8 @@
 	let { data }: PageProps = $props();
 </script>
 
-<h1>{{data.category}}</h1>
+{#await data.projects}
+	<h1>loading...</h1>
+{:then}
+	<h1>data.projects</h1>
+{/await}
