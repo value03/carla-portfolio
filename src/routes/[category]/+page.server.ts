@@ -3,7 +3,7 @@ import type { PageServerLoad } from './$types';
 /**  */
 export const load: PageServerLoad = async ({ params, fetch }) => {
 	return {
-		projects: fetch('/api/projects/')
+		projects: fetch('http://localhost:1337/api/projects/')
 			.then((response) => response.json())
 			.then((response) => {
 				console.log(response);
