@@ -7,8 +7,8 @@
 <h1>{data.route}</h1>
 {#await data.projects}
 	<h1>loading...</h1>
-{:then}
-	<h1>loaded yay</h1>
+{:then projects}
+	<h1>{projects}</h1>
 {:catch error}
 	<h1>{error}</h1>
 {/await}
