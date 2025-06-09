@@ -4,4 +4,4 @@
 	let { data }: PageProps = $props();
 </script>
 
-<h1>{{data.route}}</h1>
+<h1>hi</h1>

@@ -1,10 +1,11 @@
-import { getResource } from '$lib';
 import type { PageServerLoad } from './$types';
 
 /**  */
-export const load: PageServerLoad = async ({ params }) => {
-	getResource('/api/projects').then((response) => {
-		console.log(response);
-		return { projects: response, route: params.category };
-	});
+export const load: PageServerLoad = async ({ params, fetch }) => {
+	return {
+		projects: fetch('/api/projects')
+			.then((response) => response.json())
+			.then((response) => response),
+		route: params.category
+	};
 };
